@@ -17,8 +17,8 @@
       <a href="./index.html">
         <img src="./images/logotype.svg" alt="Логотип студии" class="logo"/>
        </a>
-       <nav>
-        <ul class="links">
+       <nav class="nav">
+        <ul class="navigation">
           <li><a href="./index.html" class="links-nav current">Студия</a></li>
           <li><a href="./portfolio.html" class="links-nav">Портфолио</a></li>
           <li><a href="" class="links-nav">Контакты</a></li>
@@ -46,15 +46,16 @@
         <h1>
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <a href="" class="btn">Заказать услугу</a>
+        <div class="btn-container">
+        <button type="button" class="btn">Заказать услугу</button>
+      </div>
       </section>
       <section class="qualities container">
         <h2>
           Качества
         </h2>
-        <ul>
-          <li>
-            
+        <ul class="qualities-boxes">
+          <li class="qualities-box">
             <p class="qualities-title">
               Внимание к деталям
             </p>
@@ -63,8 +64,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
-            
+          <li class="qualities-box">
             <h3 class="qualities-title">
               Пунктуальность
             </h3>
@@ -73,7 +73,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="qualities-box">
             
             <h3 class="qualities-title">
               Планирование
@@ -83,7 +83,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="qualities-box">
             
             <h3 class="qualities-title">
               Современные технологии
@@ -99,32 +99,23 @@
         <h2>
           Чем мы занимаемся
         </h2>
-        <ul>
-          <li>
+        <ul class="jobs-boxes">
+          <li class="jobs-box">
             <img
               src="./images/desktop.jpg"
               width="370"
               alt="разработка компьютерного приложения"
             />
-            <h4>
-              Десктопные приложения
-            </h4>
           </li>
-          <li>
+          <li class="jobs-box">
             <img
               src="./images/mobile.jpg"
               width="370"
               alt="разработка мобильного приложения"
             />
-            <h4>
-              Мобильные приложения
-            </h4>
           </li>
-          <li>
+          <li class="jobs-box">
             <img src="./images/design.jpg" width="370" alt="разработка дизайна" />
-            <h4>
-              Дизайнерские решения
-            </h4>
           </li>
         </ul>
       </section>
@@ -132,118 +123,30 @@
         <h2>
           Наша команда
         </h2>
-        <ul>
-          <li>
-            <img
+        <ul class="team-boxes">
+          <li class="team-box">
+            <img class="dev-photo"
               src="./images/igor.jpg"
               width="270"
               alt="Фото дизайнера"
             />
-            <h5>Игорь Демьяненко</h5>
+            <p class="dev-name">Игорь Демьяненко</p>
             <p class="dev">Product Designer</p>
-            <ul>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на инстаграм">
-                  Инстаграм
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на твиттер">
-                  Твиттер
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на фейсбук">
-                  Фейсбук
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на линкедин">
-                  Линкедин
-                </a>
-              </li>
-            </ul>
           </li>
-          <li>
-            <img src="./images/olga.jpg" width="270" alt="Фото фронтенд разработчика" />
-            <h5>Ольга Репина</h5>
+          <li class="team-box">
+            <img class="dev-photo" src="./images/olga.jpg" width="270" alt="Фото фронтенд разработчика" />
+            <p class="dev-name">Ольга Репина</p>
             <p class="dev">Frontend Developer</p>
-            <ul>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на инстаграм">
-                  Инстаграм
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на твиттер">
-                  Твиттер
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на фейсбук">
-                  Фейсбук
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на линкедин">
-                  Линкедин
-                </a>
-              </li>
-            </ul>
           </li>
-          <li>
-            <img src="./images/nikolay.jpg" width="270" alt="Фото специалиста по маркетингу" />
-            <h5>Николай Тарасов</h5>
-            <p class="dev">Marketing</p>
-            <ul>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на инстаграм">
-                  Инстаграм
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на твиттер">
-                  Твиттер
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на фейсбук">
-                  Фейсбук
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на линкедин">
-                  Линкедин
-                </a>
-              </li>
-            </ul>
+          <li class="team-box">
+            <img class="dev-photo" src="./images/nikolay.jpg" width="270" alt="Фото специалиста по маркетингу" />
+            <p class="dev-name">Николай Тарасов</p>
+            <p class="dev">Marketing</p> 
           </li>
-          <li>
-            <img src="./images/mihail.jpg" width="270" alt="Фото дизайнера интерфейса" />
-            <h5>Михаил Ермаков</h5>
+          <li class="team-box">
+            <img class="dev-photo" src="./images/mihail.jpg" width="270" alt="Фото дизайнера интерфейса" />
+            <p class="dev-name">Михаил Ермаков</p>
             <p class="dev">UI Designer</p>
-            <ul>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на инстаграм">
-                  Инстаграм
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на твиттер">
-                  Твиттер
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-labetarget="_blank" l="Ссылка на фейсбук">
-                  Фейсбук
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Ссылка на линкедин">
-                  Линкедин
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </section>
@@ -252,41 +155,17 @@
 
     <footer>
       <section class="container footer">
+        <div class="footer-boxes">
         <a href="./index.html"
-          ><img src="./images/logotype.svg" alt="Логотип студии" class="logo"
+          ><img src="./images/logotype.svg" alt="Логотип студии" class="footer-logo"
         /></a>
-        <address>
-          <ul class="contacts">
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@example.com</a></li>
-            <li><a href="tel:+38target="_blank" 0991111111" class="contact">+38 099 111 11 11</a></li>
+        
+          <ul class="footer-contacts">
+            <li class="footer-contact">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="footer-contact"><a href="mailto:info@devstudio.com" class="contact">info@example.com</a></li>
+            <li class="footer-contact"><a href="tel:+38target="_blank" 0991111111" class="contact">+38 099 111 11 11</a></li>
           </ul>
-        </address>
-        <h4>
-          Присоединяйтесь
-        </h4>
-        <ul>
-          <li>
-            <a href="" target="_blank" aria-label="Ссылка на инстаграм">
-              Инстаграм
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="Ссылка на твиттер">
-              Твиттер
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="Ссылка на фейсбук">
-              Фейсбук
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="Ссылка на линкедин">
-              Линкедин
-            </a>
-          </li>
-        </ul>
+      </div>
       </section>
     </footer>
   </body>
