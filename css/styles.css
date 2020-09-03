@@ -6,10 +6,15 @@
     --button-background: #f5f4fa;
   }
 
+  
   a {
     text-decoration: none;
   }
   
+  .visually-hidden {
+    margin: 0;
+  }
+
   body {
     color: var(--secondary-text-color);
     font-family: roboto, sans-serif;
@@ -21,7 +26,6 @@
   
   .container {
     width: 1200px;
-    outline: solid tomato;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -46,25 +50,17 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  
-  h3 {
-    color: var(--secondary-text-color);
-  
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
 
 /* header */
+
+
 
 .logo {
   margin-right: 93px;
 }
 
 .nav {
-  display: inline;
+  display: flex;
   margin-right: 331px;
 }
 
@@ -72,13 +68,18 @@
   margin: 0;
   width: 313px;
   padding: 0px;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  
+}
+
+.navigation-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header {
     padding: 32px 215px;
     width: 1200px;
+    display: flex;
   }
 
   .links-nav {
@@ -96,6 +97,10 @@
     color: var(--accent-color);
   }
   
+  .contacts-item {
+    min-width: 122px;
+  }
+
   .links-contact {
     color: var(--main-text-color);
     padding: 32px 0px;
@@ -113,10 +118,13 @@
 
 .contacts {
   width: 294px;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.contacts-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .current {
@@ -198,10 +206,11 @@ h1 {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.9;
-    
+    border-radius: 4px;
+    padding: 10px 32px;
     text-align: center;
     letter-spacing: 0.06em;
-
+    cursor: pointer;
   }
 
 /* qualities */
@@ -209,7 +218,7 @@ h1 {
 .qualities-boxes {
   margin: 0;
   padding: 0;
-  width: 1200px;
+  min-width: 1200px;
   display: flex;
   justify-content: space-between;
 }
@@ -220,7 +229,7 @@ h1 {
 
 .qualities {
     padding: 120px 215px 94px 215px;
-    width: 1170px;
+    width: 1200px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -267,7 +276,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 94px 215px 98px 215px;
-    width: 1170px;
+    width: 1200px;
   }
 
 /* team */
@@ -290,7 +299,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 94px 215px 94px 215px;
-    width: 1170px;
+    width: 1200px;
   }
   
   .dev {
@@ -325,15 +334,73 @@ h1 {
 
   /* portfolio */
 
+.filter-btns {
+  min-width: 554px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn-box:not(:first-child) {
+  margin-left: 8px;
+}
+
+.filter-btn {
+  border-radius: 4px;
+}
+
 .filters {
-    padding: 100px 495px 50px 495px;
-    width: 554px;
+    padding: 100px 215px 50px 215px;
+    min-width: 1200px;
 }
 
 .gallery {
-    width: 1170px;
+    width: 1200px;
     padding: 50px 215px 94px 215px;
+    display: flex;
+    flex-direction: column;
 }
+
+  .gallery-type {
+    margin-bottom: 20px;
+  }
+
+h3 {
+  color: var(--secondary-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-boxes {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+}
+
+.gallery-box:not(:nth-last-child(-n + 3)) {
+  padding-bottom: 30px;
+}
+
+.gallery-box:not(:nth-child(3n)) {
+ margin-right: 30px;
+} 
+
+.gallery-text-box {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+}
+
+img {
+  display: block;
+}
+
 
   button {
     background-color: var(--button-background);
@@ -350,6 +417,7 @@ h1 {
   button:focus {
     color: var(--additional-text-color);
     background-color: var(--accent-color);
+    border-radius: 4px;
   }
   
   .gallery-text {
