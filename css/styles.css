@@ -6,6 +6,9 @@
     --button-background: #f5f4fa;
   }
 
+  * {
+    box-sizing: border-box;
+  }
   
   a {
     text-decoration: none;
@@ -22,13 +25,6 @@
   
   ul {
     list-style: none;
-  }
-  
-  .container {
-    width: 1200px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   h2 {
@@ -77,9 +73,10 @@
 }
 
 .header {
-    padding: 32px 215px;
-    width: 1200px;
+    padding: 24px 0px;
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   .links-nav {
@@ -132,10 +129,6 @@
 }
 /* footer */
 
-.footer-box {
-
-}
-
 .footer-contacts {
   margin: 0;
   padding: 0;
@@ -146,8 +139,8 @@
 }
 
 .footer {
-    width: 1200px;
-    padding: 60px 215px 60px 215px;
+    width: 100%;
+    padding: 60px 215px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -185,7 +178,7 @@ h1 {
   }
 
 .hero {
-    padding: 200px 452px 280px 452px;
+    padding: 200px 0px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -216,20 +209,24 @@ h1 {
 /* qualities */
 
 .qualities-boxes {
+  width: 100%;
   margin: 0;
-  padding: 0;
-  min-width: 1200px;
+  padding: 0px 215px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .qualities-box {
-  width: 270px;
+  min-width: 270px;
+}
+
+.qualities-box:not(:last-child) {
+  margin-right: 23px;
 }
 
 .qualities {
-    padding: 120px 215px 94px 215px;
-    width: 1200px;
+    padding: 94px 0px;
+    width: 100%;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -263,10 +260,13 @@ h1 {
 
 /* jobs */
 
+.jobs-box:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
 .jobs-boxes {
   margin: 0;
-  padding: 0;
-  width: 1200px;
+  padding: 0px 215px;
   display: flex;
   justify-content: space-around;
 }
@@ -275,8 +275,8 @@ h1 {
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    padding: 94px 215px 98px 215px;
-    width: 1200px;
+    padding: 94px 0px;
+    width: 100%;
   }
 
 /* team */
@@ -284,7 +284,7 @@ h1 {
 
 .team-boxes {
   margin: 0;
-  padding: 0;
+  padding: 0px 215px;
   display: flex;
   justify-content: space-around;
 }
@@ -295,11 +295,15 @@ h1 {
   justify-content: center;
 }
 
+.team-box:not(:last-child) {
+  margin-right: 23px;
+}
+
 .team {
     margin-left: auto;
     margin-right: auto;
-    padding: 94px 215px 94px 215px;
-    width: 1200px;
+    padding: 94px 0px;
+    width: 100%;
   }
   
   .dev {
@@ -400,7 +404,6 @@ h3 {
 img {
   display: block;
 }
-
 
   button {
     background-color: var(--button-background);
