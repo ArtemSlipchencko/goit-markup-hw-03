@@ -86,6 +86,14 @@
     margin-right: auto;
   }
 
+  header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #ECECEC;
+  }
+
   .links-nav {
     padding: 24px 0;
     color: var(--secondary-text-color);
@@ -374,12 +382,19 @@ h1 {
 
   /* portfolio */
 
+ul {
+  list-style: none;
+}
+
 .filter-btns {
-  min-width: 554px;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.filters-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .filter-btn-box:not(:first-child) {
@@ -388,18 +403,23 @@ h1 {
 
 .filter-btn {
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filters {
-    padding: 100px 215px 50px 215px;
+    padding-top: 94px;
+    padding-bottom: 34px;
     min-width: 1200px;
 }
 
-.gallery {
+.gallery-container {
     width: 1200px;
-    padding: 50px 215px 94px 215px;
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.gallery {
+  padding-bottom: 94px;
 }
 
   .gallery-type {
@@ -419,9 +439,13 @@ h3 {
 
 .gallery-boxes {
   margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 15px;
+}
+
+.gallery-box {
+  width: 370px;
 }
 
 .gallery-box:not(:nth-last-child(-n + 3)) {
